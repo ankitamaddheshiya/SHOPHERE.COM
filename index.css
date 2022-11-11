@@ -2,8 +2,13 @@
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 0px;
 }
-
-
+.nav_1{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
 #nav_up{
    display: flex;
    background-color: rgb(224, 224, 224);
@@ -18,18 +23,16 @@
 }
 .logo{
     display: flex;
-    
-    width: 80%;
-    height:70px;
+    width:80%;
+    height:90%;
 }
 .logo>img{
-    width:20%;
-    height:70px;
-
+    width:150px;
+    height:60px;
 }
 .logo>select{
     width:15%;
-    height:45px;
+    height:43px;
     margin-left: 60px;
     margin-top: 10px;
     border-radius:35px 0px 0px 35px;
@@ -39,18 +42,17 @@
 }
 .logo>input{
     width:30%;
-    height:39px;
+    height:43px;
     font-size: 15px;
     margin-top: 10px;
    font-style: italic;
     text-align: center;
-
 }
 .logo>div{
     width:3%;
     height:42px;
     border: 1px solid black;
-    
+    background-color: white;
     margin-top: 10px;
     border-radius:0px 35px 35px 0px;
     font-style: italic;
@@ -58,13 +60,10 @@
   
 
 }
-
 .one{
     width: 15%;
-  
     display: flex;
- 
-}
+ }
 .one>img{
    width: 20%;
     margin-bottom: 20px;
@@ -72,13 +71,11 @@
 .two{
     width: 55%;
     display: flex;
-
 }
 .three{
     width: 30%;
     display: flex;
     justify-content: space-evenly;
-
 }
 .flex{
     display: flex;
@@ -98,20 +95,15 @@
 #middle{
   width:100%;
   height:400;
-
 }
 #card{
     display: flex;
-
-  
     justify-content: space-evenly;
 }
 .card_1{
     font-size: 20px;
     width:23%;
-  
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-   
 }
 .card_1>img{
     
@@ -120,8 +112,7 @@
 .F1{
     background-color: rgb(224, 224, 224);
     height: 50px;
-   margin: 10px;
-   
+    margin: 10px;
     text-align: center;
     align-items: center;
 }
@@ -148,7 +139,6 @@
 h1{
     text-align: center;
 }   
-
 #middle_2_child-1 img{
     width: 100%;
     height: 400px;
@@ -163,15 +153,11 @@ h1{
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(224, 224, 224) ;
-   
-   
 }
 #middle_2_child_A img{
     width: 70%;
     margin: 20px;
-    
 }
-
 #middle_2_child_B{
     display: flex;
     justify-content: space-evenly;
@@ -181,13 +167,10 @@ h1{
     width: 90%;
     margin: 30px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
 }
 #logo_2{
     text-align: center;
     height: 150px;
-
-
 }
 #logo_2 img{
     width:10%;
@@ -203,32 +186,38 @@ h1{
 #middle_3 img{
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
 }
 .wrapper{
-    width:100%;
-    position: relative;
+    width:1000px;
     height:480px;
-border: 1px solid red;
-display: flex;
-justify-content: space-between;
-
+    display: flex;
+    justify-content: space-between;
 }
 #wrapper_1{
     display: flex;
     justify-content: space-between;
-    width: 800px!important;
+    width: 400px;
+}
+.items{
+    width:150px;
 }
 #wrapper_1 img{
-    width:90%;
+    width:1000px;
+}
 
-}
-#wrapper_2{
-    width: 25%;
-    border: 1px solid red;
-}
 #wrapper_2 img{
-    width: 100%;
+    width: 500px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+}
+.wrapper .owl-prev span{
+    font-size: 150px;
+    position: relative;
+    top:-250px;
+}
+.wrapper .owl-next span{
+    font-size: 150px;
+    position: relative;
+    top:-250px;
+    left:800px;
 }
 h2{
     font-size: 40px;
@@ -237,17 +226,14 @@ h2{
     display: flex;
     justify-content: space-evenly;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
 }
 #middle_5{
-    display: flex;
-    align-items: center;
-   
-    height: 300px;
-    justify-content:space-evenly;
-
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  width: 100%;
+     display: flex;
+     align-items: center;
+     height: 300px;
+     justify-content:space-evenly;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     width: 100%;
 }
 .middle_5-child{
     width:18%;
@@ -258,20 +244,59 @@ h2{
     border: 13px solid rgb(210, 208, 208);
     border-radius: 100%;
 }
-#middle_6{
+.carousel-cell img{
+    width:60%;
+}
+.middle_6{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+#middle_7{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    justify-content:space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+}
+.middle_7-child{
+   width:18%;
+   margin-left: 20px;
+}
+#middle_7 img{
+   width:70%;
+   border: 13px solid rgb(210, 208, 208);
+   border-radius: 100%;
+}
+.middle_8{
     display: flex;
     justify-content: space-evenly;
 }
-#middle_6 img{
-    width:100%;
+.footer_1{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
 }
-.wrapper .owl-prev span{
-    font-size: 50px;
-    
-    
-    top:-240px;
+.footer_1 input{
+    width: 30%;
 }
-
+.footer_2{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(227, 221, 212);
+    font-size: 10px;
+ 
+}
+.footer_3{
+    display: flex;
+    justify-content: center;
+}
+.footer_3 img{
+    width:5%;
+}
 
 
 

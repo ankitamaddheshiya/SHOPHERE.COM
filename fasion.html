@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+    let url="https://636e5aab182793016f3e687b.mockapi.io/products"
+ 
+    async function getData(){
+     try{
+        let res = await fetch(url)
+        let out = await res.json()
+        console.log(out)
+        displayCard(out)
+       
+      }
+      catch(err){
+        alert(err)
+       }
+    }
+    getData();
+function displayCard(out){
+    document.querySelector("#container").innerHTML=" ";
+    out.forEach((element)=>{
+    let div = document.createElement("div")
+    let image =document.createElement("img");
+    image.setAttribute("src",element.avatar)
+
+    let title = document.createElement("h2");
+    title.innerText=element.title
+
+    let category= document.createElement("p");
+    category.innerText=element.category
+
+    let des=document.createElement("p");
+    des.innerText =element.description
+
+     let price =document.createElement("h2");
+     price.innerText=element.price
+
+     div.append(image,title,category,des,price)
+     document.querySelector("#container").append(div);
+  })
+}
+
+
+</script>

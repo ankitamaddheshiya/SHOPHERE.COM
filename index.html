@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/css/bootstrap.min.css"/>
+    
     <title>SHOPHERE.COM-Online Plateform</title>
 </head>
 <body>
     <div id="nav_bar">
-
+          <div class="nav_1">
+            Shop the Httest toy for Every ages
+          </div>
      <div id="nav_up">
         <div class="logo">
             
-            <img src="https://img.shop.com/Image/resources/logos/shop-logo-us-thanksgiving.svg" alt="logo">
+            <img src="https://document-export.canva.com/N5djs/DAFRnyN5djs/3/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20221111%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221111T035638Z&X-Amz-Expires=21581&X-Amz-Signature=71109d85e21dbee6778a6888baac03eabe61e3e97dc1c40ea77a1eeead530601&X-Amz-SignedHeaders=host&response-expires=Fri%2C%2011%20Nov%202022%2009%3A56%3A19%20GMT" alt="logo">
             <select>
                 <option value="">All Department</option>
                 <option value="All Department">All Department</option>
@@ -282,42 +286,61 @@
 
 </div>
 <h1>New Products</h1>
-<div id="middle_6">
-      <div>
+<div class="carousel"  data-flickity='{ "groupCells": true }'>
+      <div class="carousel-cell">
       <img src="https://www.shop.com/feo-cdn/X/W/jUcI-1e7w.webp" alt="">
       <p>Shopping Annuty</p>
       <h4>$59.95</h4>
      
       </div>
-      <div>
-        <img src="https://www.shop.com/feo-cdn/q/W/gwOZuHBJ0.webp" alt="">
-        <p></p>
-        <h4>$76.87</h4>
-       
-        </div>
-        <div>
+         <div class="carousel-cell">
+            <img src="https://www.shop.com/feo-cdn/q/W/gwOZuHBJ0.webp" alt="">
+            <p>AXIS NUTRITION Medicine Emotional balance</p>
+            <h4>$76.87</h4>
+         </div>
+         <div class="carousel-cell">
             <img src="https://www.shop.com/feo-cdn/D/-/bXO6bVRsM.webp" alt="">
-            <p></p>
+            <p>AXIS NUTRITION Medicine Emotional balance</p>
             <h4>$65.76</h4>
-           
-            </div>
-            <div>
+         </div>
+         <div class="carousel-cell">
                 <img src="https://www.shop.com/feo-cdn/o/N/cpwCLjDuE.webp" alt="">
-                <p></p>
+                <p>AXIS NUTRITION Medicine Emotional balance</p>
                 <h4>$87.65</h4>
                
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                    <h4></h4>
+         <div class="carousel-cell">
+                    <img src="https://img.shop.com/Image/240000/247900/247927/products/1948463047.jpg?plain&size=600x600" alt="">
+                    <p>AXIS NUTRITION Medicine Emotional balance</p>
+                    <h4>$87.98</h4>
                    </div>
+         <div class="carousel-cell">
+                    <img src="https://www.shop.com/feo-cdn/X/W/jUcI-1e7w.webp" alt="">
+                    <p>Shopping Annuty</p>
+                    <h4>$59.95</h4>
+         </div>
+         <div class="carousel-cell">
+                    <img src="https://img.shop.com/Image/240000/243300/243385/products/1943471621.jpg?plain&size=600x600" alt="">
+                     <p>AXIS NUTRITION Medicine Emotional balance</p>
+                    <h4>$76.87</h4>
+         </div>
+         <div class="carousel-cell">
+                    <img src="https://img.shop.com/Image/240000/243300/243385/products/1943471614.jpg?plain&size=600x600" alt="">
+                    <p>AXIS NUTRITION Medicine Emotional balance</p>
+                    <h4>$65.76</h4>
+         </div>
+         <div class="carousel-cell">
+                    <img src="https://www.shop.com/feo-cdn/o/N/cpwCLjDuE.webp" alt="">
+                    <p>AXIS NUTRITION Medicine Emotional balance</p>
+                    <h4>$87.65</h4>
+            </div>    
 
 </div>
 
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/js/bootstrap.bundle.min.js" ></script>
+
 <script type="text/javascript">
     $(".owl-carousel").owlCarousel({
             loop:true,
@@ -327,20 +350,107 @@
             dots:true,
             responsive:{
                 0:{
-                    items:1
+                    items:0
                 },
-                600:{
-                    items:2
+                100:{
+                    items:1
                 },
                 1000:{
                     items:3
                 }
 
             }
-
-    });
-    
+});
 </script>
+<br>
+<br>
+<div class="middle_6">
+    <div>
+        <img src="https://img.shop.com/Image/homepage/ix-us-eng-105233-digestive-health-packets-holiday-banner-med1667506965936.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://img.shop.com/Image/homepage/us-shp-isotonix-opc-beauty-blend1666710651225.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://img.shop.com/Image/homepage/us-shp-handn-stocking-stuffers1666710938416.jpg" alt="">
+    </div>
+</div>
+
+<h1>Fall Must -Haves</h1>
+<div id="middle_7">
+    <div class="middle_7-child">
+        <img src="https://img.shop.com/Image/260000/266700/266794/products/1920610566.jpg?plain&size=400x400" alt="">
+        <h3>ELECTRONIC GIFTS</h3>
+    </div>
+    <div class="middle_7-child">
+        <img src="https://img.shop.com/Image/270000/278200/278200/products/1893109510.jpg?plain&size=400x400" alt="">
+        <h3>GIFT UNDER $25</h3>
+    </div>
+    <div class="middle_7-child">
+        <img src="https://img.shop.com/Image/260000/266700/266794/products/1920629638.jpg?plain&size=400x400" alt="">
+        <h3>GIFT UNDER $50</h3>
+    </div>
+    <div class="middle_7-child">
+        <img src="https://img.shop.com/Image/280000/289600/289605/products/1946502092.jpg?plain&size=400x400" alt="">
+        <h3>GIFT UNDER $100</h3>
+    </div>
+    <div class="middle_7-child">
+        <img src="https://img.shop.com/Image/260000/266700/266794/products/1940554751.jpg?plain&size=400x400" alt="">
+        <h3>STOCKING STUFFERS</h3>
+    </div>
+    <div class="middle_7-child">
+        <img src="https://img.shop.com/Image/250000/251800/251872/products/1927616009.jpg?plain&size=400x400" alt="">
+        <h3>GIFTS FOR THE FAMILYS</h3>
+    </div>
+</div>
+<h1>Ours Brands</h1>
+<div  class="middle_8">
+    <div>
+        <h3>Health Nuitrition</h3>
+        <img src="https://img.shop.com/Image/homepage/healthnutirtion1572880380738.jpg" alt="">
+    </div>
+    <div>
+        <h3>Health Nuitrition</h3>
+        <img src="https://img.shop.com/Image/homepage/lipstick1572880828301.jpg" alt="">
+    </div>
+    <div>
+        <h3>Health Nuitrition</h3>
+        <img src="https://img.shop.com/Image/homepage/home_ma1572880950379.jpg" alt="">
+    </div>
+    <div>
+        <h3>Health Nuitrition</h3>
+        <img src="https://img.shop.com/Image/homepage/baby-kids1572881179463.jpg" alt="">
+    </div>
+    <div>
+        <h3>Health Nuitrition</h3>
+        <img src="https://img.shop.com/Image/homepage/1840336563__225x225-img__.jpg" alt="">
+    </div>
+</div>
+<br>
+<div class="footer">
+    <div class="footer_1">
+        Get Email deals $ earn Cashback:<input type="text" placeholder="Enter Email Address">
+    
+      <h5>About US | Help | Accessability Statement | Contect Us | Partner with us | services | Country and region | connect |Own our own SHOP site </h5>
+    </div>
+    <div class="footer_2">
+        <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, 
+            copyrights, and brands are the property of their respective<br> owners.Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop<br> Consultants will receive increased IBV instead of cashback on qualifying purchases.Privacy Policy 
+            <br>| Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</p>
+    </div>
+</div>
+<div class="footer_3">
+    <img src="https://www.shop.com/feo-cdn/7/F/BIyWLz__s.webp" alt="">
+    <img src="https://www.shop.com/feo-cdn/B/L/K5pf_0c94.webp" alt="">
+    <img src="https://www.shop.com/feo-cdn/m/S/eK8gl_JjY.webp" alt="">
+    <img src="https://www.shop.com/feo-cdn/b/_/hz55ar3kI.png" alt="">
+    <img src="https://www.shop.com/feo-cdn/b/_/hz55ar3kI.png" alt="">
+    <img src="https://img.shop.com/Image/images/ir/commonwealth_2022_rank_22_top_2000_tw_english.png" alt="">
+    <img src="https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png" alt="">
+    <img src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png" alt="">
+
+</div>
+
 </body>
 </html>
 <script></script>

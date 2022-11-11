@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign_up Form</title>
+    <style>
+        #nav_bar {
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            padding: 0px;
+        }
+
+        .nav_1 {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        #nav_up {
+            display: flex;
+            background-color: rgb(224, 224, 224);
+            width: 100%;
+            height: 70px;
+        }
+
+        #nav_down {
+            display: flex;
+            background-color: rgb(224, 224, 224);
+            width: 100%;
+            height: 70px;
+        }
+
+        .logo {
+            display: flex;
+            width: 80%;
+            height: 90%;
+        }
+
+        .logo>img {
+            width: 150px;
+            height: 60px;
+        }
+
+        .logo>select {
+            width: 15%;
+            height: 43px;
+            margin-left: 60px;
+            margin-top: 10px;
+            border-radius: 35px 0px 0px 35px;
+            font-size: 15px;
+            text-align: center;
+
+        }
+
+        .logo>input {
+            width: 30%;
+            height: 39px;
+            font-size: 15px;
+            margin-top: 10px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .logo>div {
+            width: 3%;
+            height: 42px;
+            border: 1px solid black;
+            background-color: white;
+            margin-top: 10px;
+            border-radius: 0px 35px 35px 0px;
+            font-style: italic;
+            text-align: center;
+
+
+        }
+
+        .one {
+            width: 15%;
+            display: flex;
+        }
+
+        .one>img {
+            width: 20%;
+            margin-bottom: 20px;
+        }
+
+        .two {
+            width: 55%;
+            display: flex;
+        }
+
+        .three {
+            width: 30%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .flex {
+            display: flex;
+            font-style: unset;
+        }
+
+        .two ul li {
+            list-style: none;
+            padding: 0 12px;
+        }
+
+        .sign {
+            display: flex;
+        }
+
+        .sign>img {
+            width: 35%;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            padding: 5px 200px;
+
+        }
+
+        .container .title {
+            font-size: 16px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .container .title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+
+        }
+
+        .container form .user-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        form .user-details .input-box {
+            margin: 20px 0 12px 0;
+            width: calc(100%/2 - 20px);
+        }
+
+        .user-details .input-box .detailts {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .user-details .input-box input {
+            height: 45px;
+            width: 100%;
+            outline: none;
+            padding-left: 15px;
+            border: 1px solid black;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        #submit {
+            width: 70%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            border-radius: 35px;
+            font-size: 20px;
+        }
+
+        .footer_1 {
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .footer_1 input {
+            width: 30%;
+            margin-top: 10px;
+        }
+
+        .footer_2 {
+            width: 100%;
+            height: 70px;
+            background-color: rgb(227, 221, 212);
+            font-size: 10px;
+        }
+
+        .footer_3 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .footer_3 img {
+            width: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav_bar">
+        <div id="nav_up">
+            <div class="logo">
+
+                <img src="https://document-export.canva.com/N5djs/DAFRnyN5djs/3/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20221111%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221111T035638Z&X-Amz-Expires=21581&X-Amz-Signature=71109d85e21dbee6778a6888baac03eabe61e3e97dc1c40ea77a1eeead530601&X-Amz-SignedHeaders=host&response-expires=Fri%2C%2011%20Nov%202022%2009%3A56%3A19%20GMT"
+                    alt="logo">
+                <select>
+                    <option value="">All Department</option>
+                    <option value="All Department">All Department</option>
+                    <option value="Auto">Auto</option>
+                    <option value="Baby">Baby</option>
+                    <option value="Books">Books</option>
+                    <option value="Beauty">Beauty</option>
+                    <option value="Business">Business</option>
+                    <option value="Cameras">Cameras</option>
+                    <option value="Clothes">Clothes</option>
+                </select>
+
+                <input type="text" placeholder="Search: SHOPHERE.COM">
+                <div>
+                    <img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg">
+                </div>
+            </div>
+            <div class="nav_img">
+                <img src="https://img.shop.com/Image/header2013/layered-us-eng-105972-blk-friday-bannerheader1668091493562.jpg"
+                    alt="">
+
+            </div>
+        </div>
+        <div id="nav_down">
+            <div class="one">
+                <img src="https://img.shop.com/Image/resources/images/icon-menu-24px.svg">
+                <p>Categories</p>
+            </div>
+            <div class="two">
+                <ul class="flex">
+                    <li>Exclusive Brand</li>
+                    <li>Stores</li>
+                    <li>Deals</li>
+                    <li>SHOP Travels</li>
+                    <li>Departments</li>
+                    <li>Shop Buddy</li>
+                    <li>SHOP Local</li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="three">
+                <div class="sign">
+                    <img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg">
+                    <p>Sign in</p>
+                </div>
+                <div class="sign">
+                    <img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg">
+                    <p>Orders</p>
+                </div>
+                <div class="sign">
+                    <img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg">
+                    <p>Cart</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="title">
+            <h1>Create An Account</h1>
+        </div>
+        <p>*Indicates Requireds Fields</p>
+        <form id="form" method="post" onsubmit="signUp(event);">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input id="name" type="text" placeholder="Please enter your first name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input id="lastname" type="text" placeholder="Please enter your yasr name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email Address</span>
+                    <input id="email" type="Email" placeholder="Please enter your email address" required>
+                </div>
+                <div class="input-box">
+
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input id="pass" type="password" placeholder="Please enter your password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm Password </span>
+                    <input id="c_pass" type="password" placeholder="Please enter your password" required>
+                </div>
+                <h2>Text Message(SMS) Alerts:(Optional)</h2>
+                <p>Do you to signup for shopper alert fron SHOP.COM?(Message and Data rates May apply</p>
+                <br>
+                <div class="input-box">
+                    <span class="details">Mobile Phone </span>
+                    <input id="phone" type="Number" placeholder="Please Enter Your 10 digit Number" required>
+                </div>
+            </div>
+            <input type="submit" value="Create An Account">
+
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <div class="footer">
+        <div class="footer_1">
+            Get Email deals $ earn Cashback:<input type="text" placeholder="Enter Email Address">
+
+            <h5>About US | Help | Accessability Statement | Contect Us | Partner with us | services | Country and region
+                | connect |Own our own SHOP site </h5>
+        </div>
+        <div class="footer_2">
+            <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks,
+                copyrights, and brands are the property of their respective<br> owners.Only Customers will receive
+                cashback on qualifying purchases. UnFranchise Owners/Shop<br> Consultants will receive increased IBV
+                instead of cashback on qualifying purchases.Privacy Policy
+                <br>| Terms of Use | Advertising Disclosure | Return Policy | Shipping Information
+            </p>
+        </div>
+    </div>
+
+    <div class="footer_3">
+        <img src="https://www.shop.com/feo-cdn/7/F/BIyWLz__s.webp" alt="not found">
+        <img src="https://www.shop.com/feo-cdn/B/L/K5pf_0c94.webp" alt="not found">
+        <img src="https://www.shop.com/feo-cdn/m/S/eK8gl_JjY.webp" alt="not found">
+        <img src="https://www.shop.com/feo-cdn/b/_/hz55ar3kI.png" alt="not found">
+        <img src="https://www.shop.com/feo-cdn/b/_/hz55ar3kI.png" alt="not found">
+        <img src="https://img.shop.com/Image/images/ir/commonwealth_2022_rank_22_top_2000_tw_english.png"
+            alt="not found">
+        <img src="https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png" alt="">
+        <img src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png"
+            alt="not found">
+    </div>
+    <img src="https://seal.digicert.com/seals/cascade/?tag=mcRGO2B9&referer=www.shop.com&format=png&lang=en&seal_number=3&seal_size=m&an=min"
+        alt="not found">
+    <script>
+        function signUp(e) {
+            e.preventDefault();
+            let f_name = document.querySelector("#name");
+            let l_name = document.querySelector("#lastname");
+            let email = document.querySelector("#email");
+            let password = document.querySelector("#pass");
+            let c_password = document.querySelector("#c_pass");
+            let phone = document.querySelector("#phone");
+
+            if (password.value === c_password.value) {
+                var collection = JSON.parse(window.localStorage.getItem('user_data')) || [];
+                users =
+                {
+                    f_name: f_name.value,
+                    l_name: l_name.value,
+                    email: email.value,
+                    password: password.value,
+                    phone: phone.value,
+                }
+                collection.push(users);
+                localStorage.setItem('user_data', JSON.stringify(collection));
+                window.alert("registered successfully");
+            }
+            else {
+                window.alert("Invalid password or password not matched");
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

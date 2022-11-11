@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPHERE.COM -ONLINE PLATEFORM</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    
+    <style>
+ #nav_bar{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 0px;
+}
+.nav_1{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#nav_up{
+   display: flex;
+   background-color: rgb(224, 224, 224);
+    width: 100%;
+    height:70px;
+}
+#nav_down{
+     display: flex;
+     background-color: rgb(224, 224, 224);
+    width: 100%;
+    height:70px;
+}
+.logo{
+    display: flex;
+    width:80%;
+    height:90%;
+}
+.logo>img{
+    width:150px;
+    height:60px;
+}
+.logo>select{
+    width:15%;
+    height:43px;
+    margin-left: 60px;
+    margin-top: 10px;
+    border-radius:35px 0px 0px 35px;
+   font-size: 15px;
+    text-align: center;
+
+}
+.logo>input{
+    width:30%;
+    height:43px;
+    font-size: 15px;
+    margin-top: 10px;
+   font-style: italic;
+    text-align: center;
+}
+.logo>div{
+    width:3%;
+    height:42px;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 10px;
+    border-radius:0px 35px 35px 0px;
+    font-style: italic;
+    text-align: center;
+  
+
+}
+.one{
+    width: 15%;
+    display: flex;
+ }
+.one>img{
+   width: 20%;
+    margin-bottom: 20px;
+}
+.two{
+    width: 55%;
+    display: flex;
+}
+.three{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex{
+    display: flex;
+    font-style: unset;
+}
+.two ul li{
+    list-style: none;
+    padding: 0 12px;
+}
+.sign{
+    display: flex;
+}
+.sign>img{
+    width: 35%;
+    margin-bottom: 20px;
+}
+#middle{
+  width:100%;
+  height:400;
+}
+#card{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card_1{
+    font-size: 20px;
+    width:23%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card_1>img{
+    
+    width:100%;
+}
+.F1{
+    background-color: rgb(224, 224, 224);
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+}
+.F1>img{
+    width: 50%;
+}
+#button{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#button>button{
+    width: 90%;
+    height:50px;
+    border-radius: 35px;
+    background-color: black;
+    color: white;
+  
+    margin-bottom: 10px;
+}
+#middle_2{
+   justify-content: space-between;
+    display: flex;
+}
+h1{
+    text-align: center;
+}   
+#middle_2_child-1 img{
+    width: 100%;
+    height: 400px;
+}
+#middle_2_child-1 {
+    width: 30%;
+}
+#middle_2_child-2 {
+    width: 70%;
+}
+#middle_2_child_A{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(224, 224, 224) ;
+}
+#middle_2_child_A img{
+    width: 70%;
+    margin: 20px;
+}
+#middle_2_child_B{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+#middle_2_child_B img{
+    width: 90%;
+    margin: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#logo_2{
+    text-align: center;
+    height: 150px;
+}
+#logo_2 img{
+    width:10%;
+    border-radius: 100%;
+}
+#middle_3{
+    display: flex;
+    height:470px;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    align-items: center;
+}
+#middle_3 img{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.wrapper{
+    width:1000px;
+    height:480px;
+    display: flex;
+    justify-content: space-between;
+}
+#wrapper_1{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+.items{
+    width:150px;
+}
+#wrapper_1 img{
+    width:1000px;
+}
+
+#wrapper_2 img{
+    width: 500px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+}
+.wrapper .owl-prev span{
+    font-size: 150px;
+    position: relative;
+    top:-250px;
+}
+.wrapper .owl-next span{
+    font-size: 150px;
+    position: relative;
+    top:-250px;
+    left:800px;
+}
+h2{
+    font-size: 40px;
+}
+#middle_4{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#middle_5{
+     display: flex;
+     align-items: center;
+     height: 300px;
+     justify-content:space-evenly;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     width: 100%;
+}
+.middle_5-child{
+    width:18%;
+    margin-left: 20px;
+}
+#middle_5 img{
+    width:70%;
+    border: 13px solid rgb(210, 208, 208);
+    border-radius: 100%;
+}
+.carousel-cell img{
+    width:60%;
+}
+.middle_6{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+#middle_7{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    justify-content:space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+}
+.middle_7-child{
+   width:18%;
+   margin-left: 20px;
+}
+#middle_7 img{
+   width:70%;
+   border: 13px solid rgb(210, 208, 208);
+   border-radius: 100%;
+}
+.middle_8{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_1{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}
+.footer_1 input{
+    width: 30%;
+    margin-top: 10px;
+}
+.footer_2{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(227, 221, 212);
+    font-size: 10px;
+}
+.footer_3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.footer_3 img{
+    width:5%;
+}
+</style>
+</head>
+<body>
+    <div id="nav_bar">
+        <div class="nav_1">
+          Shop the Httest toy for Every ages
+        </div>
+   <div id="nav_up">
+      <div class="logo">
+          
+          <img src="https://document-export.canva.com/N5djs/DAFRnyN5djs/3/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20221111%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221111T035638Z&X-Amz-Expires=21581&X-Amz-Signature=71109d85e21dbee6778a6888baac03eabe61e3e97dc1c40ea77a1eeead530601&X-Amz-SignedHeaders=host&response-expires=Fri%2C%2011%20Nov%202022%2009%3A56%3A19%20GMT" alt="logo">
+          <select>
+              <option value="">All Department</option>
+              <option value="All Department">All Department</option>
+              <option value="Auto">Auto</option>
+              <option value="Baby">Baby</option>
+              <option value="Books">Books</option>
+              <option value="Beauty">Beauty</option>
+              <option value="Business">Business</option>
+              <option value="Cameras">Cameras</option>
+              <option value="Clothes">Clothes</option>
+          </select>
+          
+          <input type="text" placeholder="Search: SHOPHERE.COM">
+          <div>
+          <img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg">
+      </div>
+      </div>
+      <div class="nav_img">
+          <img src="https://img.shop.com/Image/header2013/layered-us-eng-105972-blk-friday-bannerheader1668091493562.jpg" alt="">
+
+      </div>
+   </div>
+
+   <div id="nav_down">
+       <div class="one">
+          <img src="https://img.shop.com/Image/resources/images/icon-menu-24px.svg">
+          <p>Categories</p>
+       </div>
+       <div class="two">
+      <ul class="flex">
+         <li>Exclusive Brand</li>
+         <li>Stores</li>
+        <li>Deals</li>
+        <li>SHOP Travels</li>
+        <li>Departments</li>
+        <li>Shop Buddy</li>
+        <li>SHOP Local</li>
+        <li></li>
+          </ul>
+       </div>
+       <div class="three">
+          <div class="sign">
+          <img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" >
+          <p>Sign in</p>
+          </div>
+          <div class="sign">
+          <img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg">
+          <p>Orders</p>
+       </div>
+       <div class="sign">
+          <img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg">
+          <p>Cart</p>
+       </div> 
+       </div>
+     </div>
+   </div>
+   </div>
+<br>
+<br>
+  <div id="middle">
+      <img src="https://www.shop.com/feo-cdn/T/6/fBRDtYVoo.jpg" alt="">
+  </div>
+  <br>
+  <br>
+  <div id="card">
+      <div class="card_1">
+          <p>Recently Viwed</p>
+          <img src="https://img.shop.com/Image/240000/247900/247927/products/1943471616.jpg?plain&size=300x300" alt="">
+          <p>Browsing History</p>
+      
+      </div>
+      <div class="card_1">
+          <p>Dr. Deedra Mason's Essential 9</p>
+          <img src="https://img.shop.com/Image/homepage/us_eng_essential9_sq1616511735959.jpg" alt="">
+          <p>View the Essential 9</p>
+     
+      </div>
+
+      <div class="card_1">
+          <p>Featured OneCart Stores</p>
+          <div class="F1">
+          <img src="https://img.shop.com/Image/topbrands/nmlogos_139741.gif" alt="One">
+      </div>
+    
+      <div class="F1"> 
+          <img src="https://img.shop.com/Image/topbrands/nmlogos_135927.gif" alt="two">
+      </div>
+      
+       <div class="F1"> 
+          <img src="https://img.shop.com/Image/topbrands/nmlogos_101327.gif" alt="three">
+      </div>
+ 
+         <div class="F1">
+          <img src="https://img.shop.com/Image/topbrands/nmlogos_135882.gif" alt="four">
+         </div>
+<br>
+<br>
+     <p>See more details</p>
+    </div>
+     <div class="card_1">
+          <div id="button">
+          <p>Sign in for the best experience</p>
+          <button><h4>Sign in</h4></button>
+          </div>
+          <br>
+          <img src="https://img.shop.com/Image/homepage/sa-usa-103713-pain-relief-spray-lg-media1664464729834.jpg" alt="">
+      </div>
+  </div>
+  <br>
+  <h1>Popular Brands</h1>
+  <div id="middle_2">
+  <div id="middle_2_child-1">
+      <img src="https://www.shop.com/feo-cdn/2/C/6PAu5NzKI.jpg" alt="">
+     </div>
+        <div id="middle_2_child-2">
+          <div id="middle_2_child_A">
+              <div>
+                  <img src="https://www.shop.com/feo-cdn/A/p/ONaGbc0Sw.webp" alt="">
+              </div>
+              <div>
+                  <img src="https://www.shop.com/feo-cdn/W/F/MSQneTOF8.webp" alt="">
+              </div>
+              <div>
+                  <img src="https://www.shop.com/feo-cdn/_/f/nOXLJ7pGY.webp" alt="">
+              </div>
+              <div>
+                  <img src="https://www.shop.com/feo-cdn/6/6/p7X0qYWOo.webp" alt="">
+              </div>
+              <div>
+                  <img src="https://img.shop.com/Image/homepage/cuisinart.gif" alt="">
+            </div>
+          </div>
+          <div id="middle_2_child_B">
+               <div>
+                  <img src="https://www.shop.com/feo-cdn/b/3/BNMOSA8D8.webp" alt="">
+              </div>
+              <div>
+                  <img src="https://www.shop.com/feo-cdn/0/4/X-iPy5AtM.webp" alt="">
+              </div>
+              <div>
+                  <img src="https://www.shop.com/feo-cdn/9/e/txtnKDsX0.webp" alt="">
+              </div>
+              <div>
+                  <img src="https://www.shop.com/feo-cdn/8/s/K7dgRKs1Y.webp" alt="">
+              </div> 
+          </div>
+        </div>
+   </div>
+
+<div id="logo_2"> 
+  <img src="s.png" alt="logo">
+</div>
+<div id="middle_3">
+  <div>
+      <img src="https://www.shop.com/feo-cdn/w/_/d2ZGbuO-Q.webp" alt="">
+      <h3>6.00% Cashback</h3>
+      <p>Free Shipping on all Orders $25+</p>
+  </div>
+  <div>
+      <img src="https://www.shop.com/feo-cdn/r/y/3KsTpsCmE.jpg" alt="">
+      <h3>6.00% Cashback</h3>
+      <p>Free Shipping on all Orders $25+</p>
+     </div>
+  <div>
+      <img src="https://www.shop.com/feo-cdn/y/a/u6hvxtGS4.webp" alt="">
+      <h3>6.00% Cashback</h3>
+      <p>Free Shipping on all Orders $25+</p>
+     </div>
+  <div>
+      <img src="https://img.shop.com/Image/homepage/shop-en-us-BuffaloWildWings-eBonus-300x2501667948835941-img.jpg" alt="">
+      <h3>6.00% Cashback</h3>
+      <p>Free Shipping on all Orders $25+</p>
+   </div>
+</div>
+<br>
+<br>
+<h2>Hottest Toy</h2>
+
+<div class="wrapper">
+   <div id="wrapper_1 "class="owl-carousel theme-carousel">
+      <div class="items">
+          <img src="https://www.shop.com/feo-cdn/9/D/DuwwuDpaY.webp" alt="">
+          <p>Gabby's Doll houses 15 piece Gabby's purrfect Dollhouse Play set Multi</p>
+          <h4>$69.99</h4>
+      </div>
+      <div class="items">
+          <img src="https://www.shop.com/feo-cdn/I/x/zU94K7FKc.webp" alt="">
+          <p>Gabby's Doll houses 15 piece Gabby's purrfect Dollhouse Play set Multi</p>
+          <h4>$70.54</h4>
+      </div>
+      <div class="items">
+          <img src="https://www.shop.com/feo-cdn/K/F/6qd_OC9zw.webp" alt="">
+          <p>connect four spin,one size</p>
+          <h4>$65.45</h4>
+      </div>
+      <div class="items">
+          <img src="https://www.shop.com/feo-cdn/9/D/DuwwuDpaY.webp" alt="">
+          <p>Gabby's Doll houses 15 piece Gabby's purrfect Dollhouse Play set Multi</p>
+          <h4>$69.99</h4>
+      </div>
+      <div class="items">
+          <img src="https://www.shop.com/feo-cdn/I/x/zU94K7FKc.webp" alt="">
+          <p>Gabby's Doll houses 15 piece Gabby's purrfect Dollhouse Play set Multi</p>
+          <h4>$70.54</h4>
+      </div>
+      <div class="items">
+          <img src="https://www.shop.com/feo-cdn/K/F/6qd_OC9zw.webp" alt="">
+          <p>connect four spin,one size</p>
+          <h4>$65.45</h4>
+      </div>
+
+   </div>
+   <div id="wrapper_2">
+      <img src="https://www.shop.com/feo-cdn/3/u/gWa8GsRXM.webp" alt="">
+   </div>
+
+</div>
+<br>
+<div id="middle_4">
+  <div>
+      <img src="https://www.shop.com/feo-cdn/p/O/pYwDnWPhg.webp" alt="">
+  </div>
+  <div>
+      <img src="https://www.shop.com/feo-cdn/k/2/dByx9Zp7o.webp" alt="">
+  </div>
+  <div>
+      <img src="https://www.shop.com/feo-cdn/d/Y/AsftFQ1uc.webp" alt="">
+  </div>
+</div>
+  <h1>Gift Ideas</h1>
+<div id="middle_5">
+  <div class="middle_5-child">
+      <img src="https://www.shop.com/feo-cdn/d/w/MdRMpW5do.webp" alt="">
+      <h3>ELECTRONIC GIFTS</h3>
+  </div>
+  <div class="middle_5-child">
+      <img src="https://www.shop.com/feo-cdn/W/H/_6el9zKss.webp" alt="">
+      <h3>GIFT UNDER $25</h3>
+  </div>
+  <div class="middle_5-child">
+      <img src="https://www.shop.com/feo-cdn/i/p/N4AyBQQC8.webp" alt="">
+      <h3>GIFT UNDER $50</h3>
+  </div>
+  <div class="middle_5-child">
+      <img src="https://www.shop.com/feo-cdn/Q/Y/bUc_3ZwhQ.webp" alt="">
+      <h3>GIFT UNDER $100</h3>
+  </div>
+  <div class="middle_5-child">
+      <img src="https://www.shop.com/feo-cdn/o/E/yyeld31lo.webp" alt="">
+      <h3>STOCKING STUFFERS</h3>
+  </div>
+  <div class="middle_5-child">
+      <img src="https://www.shop.com/feo-cdn/A/v/wiZ8D0MpI.webp" alt="">
+      <h3>GIFTS FOR THE FAMILYS</h3>
+  </div>
+  
+
+<br>
+
+</div>
+<h1>New Products</h1>
+<div class="carousel"  data-flickity='{ "groupCells": true }'>
+    <div class="carousel-cell">
+    <img src="https://www.shop.com/feo-cdn/X/W/jUcI-1e7w.webp" alt="">
+    <p>Shopping Annuty</p>
+    <h4>$59.95</h4>
+   
+    </div>
+       <div class="carousel-cell">
+          <img src="https://www.shop.com/feo-cdn/q/W/gwOZuHBJ0.webp" alt="">
+          <p>AXIS NUTRITION Medicine Emotional balance</p>
+          <h4>$76.87</h4>
+       </div>
+       <div class="carousel-cell">
+          <img src="https://www.shop.com/feo-cdn/D/-/bXO6bVRsM.webp" alt="">
+          <p>AXIS NUTRITION Medicine Emotional balance</p>
+          <h4>$65.76</h4>
+       </div>
+       <div class="carousel-cell">
+              <img src="https://www.shop.com/feo-cdn/o/N/cpwCLjDuE.webp" alt="">
+              <p>AXIS NUTRITION Medicine Emotional balance</p>
+              <h4>$87.65</h4>
+             
+              </div>
+       <div class="carousel-cell">
+                  <img src="https://img.shop.com/Image/240000/247900/247927/products/1948463047.jpg?plain&size=600x600" alt="">
+                  <p>AXIS NUTRITION Medicine Emotional balance</p>
+                  <h4>$87.98</h4>
+                 </div>
+       <div class="carousel-cell">
+                  <img src="https://www.shop.com/feo-cdn/X/W/jUcI-1e7w.webp" alt="">
+                  <p>Shopping Annuty</p>
+                  <h4>$59.95</h4>
+       </div>
+       <div class="carousel-cell">
+                  <img src="https://img.shop.com/Image/240000/243300/243385/products/1943471621.jpg?plain&size=600x600" alt="">
+                   <p>AXIS NUTRITION Medicine Emotional balance</p>
+                  <h4>$76.87</h4>
+       </div>
+       <div class="carousel-cell">
+                  <img src="https://img.shop.com/Image/240000/243300/243385/products/1943471614.jpg?plain&size=600x600" alt="">
+                  <p>AXIS NUTRITION Medicine Emotional balance</p>
+                  <h4>$65.76</h4>
+       </div>
+       <div class="carousel-cell">
+                  <img src="https://www.shop.com/feo-cdn/o/N/cpwCLjDuE.webp" alt="">
+                  <p>AXIS NUTRITION Medicine Emotional balance</p>
+                  <h4>$87.65</h4>
+          </div>    
+
+</div>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script type="text/javascript">
+  $(".owl-carousel").owlCarousel({
+          loop:true,
+          margin:20,
+          autoplay: false,
+          nav:true,
+          dots:true,
+          responsive:{
+              0:{
+                  items:0
+              },
+              100:{
+                  items:1
+              },
+              1000:{
+                  items:3
+              }
+
+          }
+});
+</script>
+<br>
+<br>
+<div class="middle_6">
+  <div>
+      <img src="https://img.shop.com/Image/homepage/ix-us-eng-105233-digestive-health-packets-holiday-banner-med1667506965936.jpg" alt="">
+  </div>
+  <div>
+      <img src="https://img.shop.com/Image/homepage/us-shp-isotonix-opc-beauty-blend1666710651225.jpg" alt="">
+  </div>
+  <div>
+      <img src="https://img.shop.com/Image/homepage/us-shp-handn-stocking-stuffers1666710938416.jpg" alt="">
+  </div>
+</div>
+
+<h1>Fall Must -Haves</h1>
+<div id="middle_7">
+  <div class="middle_7-child">
+      <img src="https://img.shop.com/Image/260000/266700/266794/products/1920610566.jpg?plain&size=400x400" alt="">
+      <h3>ELECTRONIC GIFTS</h3>
+  </div>
+  <div class="middle_7-child">
+      <img src="https://img.shop.com/Image/270000/278200/278200/products/1893109510.jpg?plain&size=400x400" alt="">
+      <h3>GIFT UNDER $25</h3>
+  </div>
+  <div class="middle_7-child">
+      <img src="https://img.shop.com/Image/260000/266700/266794/products/1920629638.jpg?plain&size=400x400" alt="">
+      <h3>GIFT UNDER $50</h3>
+  </div>
+  <div class="middle_7-child">
+      <img src="https://img.shop.com/Image/280000/289600/289605/products/1946502092.jpg?plain&size=400x400" alt="">
+      <h3>GIFT UNDER $100</h3>
+  </div>
+  <div class="middle_7-child">
+      <img src="https://img.shop.com/Image/260000/266700/266794/products/1940554751.jpg?plain&size=400x400" alt="">
+      <h3>STOCKING STUFFERS</h3>
+  </div>
+  <div class="middle_7-child">
+      <img src="https://img.shop.com/Image/250000/251800/251872/products/1927616009.jpg?plain&size=400x400" alt="">
+      <h3>GIFTS FOR THE FAMILYS</h3>
+  </div>
+</div>
+<h1>Ours Brands</h1>
+<div  class="middle_8">
+  <div>
+      <h3>Health Nuitrition</h3>
+      <img src="https://img.shop.com/Image/homepage/healthnutirtion1572880380738.jpg" alt="">
+  </div>
+  <div>
+      <h3>Health Nuitrition</h3>
+      <img src="https://img.shop.com/Image/homepage/lipstick1572880828301.jpg" alt="">
+  </div>
+  <div>
+      <h3>Health Nuitrition</h3>
+      <img src="https://img.shop.com/Image/homepage/home_ma1572880950379.jpg" alt="">
+  </div>
+  <div>
+      <h3>Health Nuitrition</h3>
+      <img src="https://img.shop.com/Image/homepage/baby-kids1572881179463.jpg" alt="">
+  </div>
+  <div>
+      <h3>Health Nuitrition</h3>
+      <img src="https://img.shop.com/Image/homepage/1840336563__225x225-img__.jpg" alt="">
+  </div>
+</div>
+<br>
+<div class="footer">
+  <div class="footer_1">
+      Get Email deals $ earn Cashback:<input type="text" placeholder="Enter Email Address">
+  
+    <h5>About US | Help | Accessability Statement | Contect Us | Partner with us | services | Country and region | connect |Own our own SHOP site </h5>
+  </div>
+  <div class="footer_2">
+      <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, 
+          copyrights, and brands are the property of their respective<br> owners.Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop<br> Consultants will receive increased IBV instead of cashback on qualifying purchases.Privacy Policy 
+          <br>| Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</p>
+  </div>
+</div>
+<div class="footer_3">
+  <img src="https://www.shop.com/feo-cdn/7/F/BIyWLz__s.webp" alt="">
+  <img src="https://www.shop.com/feo-cdn/B/L/K5pf_0c94.webp" alt="">
+  <img src="https://www.shop.com/feo-cdn/m/S/eK8gl_JjY.webp" alt="">
+  <img src="https://www.shop.com/feo-cdn/b/_/hz55ar3kI.png" alt="">
+  <img src="https://www.shop.com/feo-cdn/b/_/hz55ar3kI.png" alt="">
+  <img src="https://img.shop.com/Image/images/ir/commonwealth_2022_rank_22_top_2000_tw_english.png" alt="">
+  <img src="https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png" alt="">
+  <img src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png" alt="">
+</div>
+</body>
+</html>
