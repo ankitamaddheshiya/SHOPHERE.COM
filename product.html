@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<style>
- #nav_bar{
+    <style>
+#nav_bar{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 0px;
 }
@@ -121,7 +120,32 @@
            font-size: 13px;
            margin-bottom: 10px;
 }
+.footer_1{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+}
+.footer_1 input{
+    width: 30%;
+}
+.footer_2{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(227, 221, 212);
+    font-size: 10px;
+ 
+}
+.footer_3{
+    display: flex;
+    justify-content: center;
+}
+.footer_3 img{
+    width:5%;
+}
 </style>
+
+</head>
 <body>
     <div id="nav_bar">
         <div class="nav_1">
@@ -129,7 +153,6 @@
         </div>
    <div id="nav_up">
       <div class="logo">
-          
           <img src="https://document-export.canva.com/N5djs/DAFRnyN5djs/3/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20221111%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221111T035638Z&X-Amz-Expires=21581&X-Amz-Signature=71109d85e21dbee6778a6888baac03eabe61e3e97dc1c40ea77a1eeead530601&X-Amz-SignedHeaders=host&response-expires=Fri%2C%2011%20Nov%202022%2009%3A56%3A19%20GMT" alt="logo">
           <select>
               <option value="">All Department</option>
@@ -143,7 +166,7 @@
               <option value="Clothes">Clothes</option>
           </select>
           
-          <input type="text" placeholder="Search: SHOPHERE.COM" oninput="search()">
+          <input type="text" placeholder="Search: SHOPHERE.COM"  oninput="search()" >
           <div>
           <img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg">
       </div>
@@ -161,13 +184,14 @@
        </div>
        <div class="two">
       <ul class="flex">
-        <li><a href="product.html">Exclusive Brand</a></li>
-        <li><a href="product.html">Store</a></li>
-       <li><a href="product.html">Deals</a></li>
-       <li><a href="fasion.html">SHOP Travels</a></li>
-       <li><a href="fasion.html">Departments</a></li>
-       <li><a href="product.html">Shop Buddy</a></li>
-       <li><a href="fasion.html">SHOP Local</a></li>
+         <li><a href="product.html">Exclusive Brand</a></li>
+         <li><a href="product.html">Store</a></li>
+        <li><a href="product.html">Deals</a></li>
+        <li><a href="fasion.html">SHOP Travels</a></li>
+        <li><a href="fasion.html">Departments</a></li>
+        <li><a href="product.html">Shop Buddy</a></li>
+        <li><a href="fasion.html">SHOP Local</a></li>
+       
           </ul>
        </div>
        <div class="three">
@@ -181,27 +205,53 @@
        </div>
        <div class="sign">
           <img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg">
-          <p><a href="cart.html">Cart</a></p>
+          <p><a href="cart1.html">cart</a></p>
        </div> 
        </div>
      </div>
    </div>
-   </div>
-   <br>
-   <br>
+ </div>
+<br>
+<br>
  <div id="container"></div>
+ <div class="footer">
+    <div class="footer_1">
+        Get Email deals $ earn Cashback:<input type="text" placeholder="Enter Email Address">
+    
+      <h5>About US | Help | Accessability Statement | Contect Us | Partner with us | services | Country and region | connect |Own our own SHOP site </h5>
+    </div>
+    <div class="footer_2">
+        <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, 
+            copyrights, and brands are the property of their respective<br> owners.Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop<br> Consultants will receive increased IBV instead of cashback on qualifying purchases.Privacy Policy 
+            <br>| Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</p>
+    </div>
+</div>
+<div class="footer_3">
+    <img src="https://www.shop.com/feo-cdn/7/F/BIyWLz__s.webp" alt="">
+    <img src="https://www.shop.com/feo-cdn/B/L/K5pf_0c94.webp" alt="">
+    <img src="https://www.shop.com/feo-cdn/m/S/eK8gl_JjY.webp" alt="">
+    <img src="https://www.shop.com/feo-cdn/b/_/hz55ar3kI.png" alt="">
+    <img src="https://www.shop.com/feo-cdn/b/_/hz55ar3kI.png" alt="">
+    <img src="https://img.shop.com/Image/images/ir/commonwealth_2022_rank_22_top_2000_tw_english.png" alt="">
+    <img src="https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png" alt="">
+    <img src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png" alt="">
+</div>
+
+<select onChange ="handleSort()">
+  <option value ="LTH">LTH</option>
+  <option value ="HTL">HTL</option>
+</select>
 </body>
 </html>
 <script>
-     let bag =[];
      let cartItems = JSON.parse(localStorage.getItem("cartProducts"))||[]
-  
-    let url="https://fakestoreapi.com/products"
+     let bag =[];
+    let url="https://636e5aab182793016f3e687b.mockapi.io/product"
     async function getData(){
      try{
         let res = await fetch(url)
         let out = await res.json()
-        bag = out
+        bag = out;
         console.log(out)
         displayCard(out)
        }
@@ -211,6 +261,17 @@
     }
     getData();
 
+    function handleSort(){
+      let selected = document.querySelector("select").value;
+      if(selected =="HTL"){
+        bag.sort((a,b)=>b.price - a.price);
+      }
+      if(selected =="LTH"){
+        bag.sort((a,b)=>a.price -b.price);
+      }
+      displayCard(bag)
+     }
+
     function search(){
       let q =  document.querySelector("input").value;
       let newData = bag.filter(function(element){
@@ -218,12 +279,12 @@
       })
       displayCard(newData)
     }
- function displayCard(out){
+   function displayCard(out){
     document.querySelector("#container").innerHTML=" ";
     out.forEach((element)=>{
     let div = document.createElement("div")
     let image =document.createElement("img");
-    image.setAttribute("src",element.image)
+    image.setAttribute("src",element.avatar)
 
     let title = document.createElement("h2");
     title.innerText=element.title
@@ -240,14 +301,11 @@
      let btn=document.createElement("button")
      btn.innerText="Add to cart"
      btn.addEventListener("click",function(){
-        cartItems.push(element)
+          cartItems.push(element)
      localStorage.setItem("cartProducts",JSON.stringify(cartItems))
      })
-
      div.append(image,title,category,des,price,btn)
      document.querySelector("#container").append(div);
   })
 }
-
-
 </script>

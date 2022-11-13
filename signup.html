@@ -247,14 +247,13 @@
             </div>
             <div class="two">
                 <ul class="flex">
-                    <li>Exclusive Brand</li>
-                    <li>Stores</li>
-                    <li>Deals</li>
-                    <li>SHOP Travels</li>
-                    <li>Departments</li>
-                    <li>Shop Buddy</li>
-                    <li>SHOP Local</li>
-                    <li></li>
+                    <li><a href="product.html">Exclusive Brand</a></li>
+                    <li><a href="product.html">Store</a></li>
+                   <li><a href="product.html">Deals</a></li>
+                   <li><a href="fasion.html">SHOP Travels</a></li>
+                   <li><a href="fasion.html">Departments</a></li>
+                   <li><a href="product.html">Shop Buddy</a></li>
+                   <li><a href="fasion.html">SHOP Local</a></li>
                 </ul>
             </div>
             <div class="three">
@@ -264,11 +263,11 @@
                 </div>
                 <div class="sign">
                     <img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg">
-                    <p>Orders</p>
+                    <p><a href="order.html">Orders</a></p>
                 </div>
                 <div class="sign">
                     <img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg">
-                    <p>Cart</p>
+                    <p><a href="cart1.html">cart</a></p>
                 </div>
             </div>
         </div>
@@ -313,7 +312,8 @@
                     <input id="phone" type="Number" placeholder="Please Enter Your 10 digit Number" required>
                 </div>
             </div>
-            <input type="submit" value="Create An Account">
+            <p><a href="signin.html">Login here</a></p>
+            <input id="submit" type="submit" value="Create An Account">
 
         </form>
     </div>
@@ -338,8 +338,7 @@
             </p>
         </div>
     </div>
-
-    <div class="footer_3">
+   <div class="footer_3">
         <img src="https://www.shop.com/feo-cdn/7/F/BIyWLz__s.webp" alt="not found">
         <img src="https://www.shop.com/feo-cdn/B/L/K5pf_0c94.webp" alt="not found">
         <img src="https://www.shop.com/feo-cdn/m/S/eK8gl_JjY.webp" alt="not found">
@@ -358,12 +357,11 @@
             e.preventDefault();
             let f_name = document.querySelector("#name");
             let l_name = document.querySelector("#lastname");
-            let email = document.querySelector("#email");
+            let email  = document.querySelector("#email");
             let password = document.querySelector("#pass");
             let c_password = document.querySelector("#c_pass");
             let phone = document.querySelector("#phone");
-
-            if (password.value === c_password.value) {
+          if (password.value === c_password.value) {
                 var collection = JSON.parse(window.localStorage.getItem('user_data')) || [];
                 users =
                 {
@@ -381,9 +379,6 @@
                 window.alert("Invalid password or password not matched");
             }
         }
-
-
-    </script>
+     </script>
 </body>
-
 </html>
