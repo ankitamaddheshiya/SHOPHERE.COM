@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<style>
- #nav_bar{
+    <style>
+         #nav_bar{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 0px;
 }
@@ -51,7 +50,7 @@
 }
 .logo>input{
     width:30%;
-    height:38px;
+    height:19px;
     font-size: 15px;
     margin-top: 10px;
    font-style: italic;
@@ -99,29 +98,25 @@
     width: 35%;
     margin-bottom: 20px;
 }
- #container{
-        display: grid;
-        justify-content: space-evenly;
-        gap: 40px;
-        grid-template-columns: repeat(4,1fr);
-        text-align: center;
-}
-#container div{
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
- }
-#container img{
-        width: 100%;
- }
- #container button{
-           width: 50%;
-           height: 30px;
-           background-color: rgb(68, 68, 246);
-           border: none;
-           color: white;
-           font-size: 13px;
-           margin-bottom: 10px;
-}
+   #container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows:auto;
+            gap:20px;
+    }
+   #container > div >img{
+            width:100%
+    }
+   #container> div{
+             text-align: center;
+              box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+   input{
+    padding: 10px 20px;
+    width: 300px;
+    }
 </style>
+</head>
 <body>
     <div id="nav_bar">
         <div class="nav_1">
@@ -129,7 +124,6 @@
         </div>
    <div id="nav_up">
       <div class="logo">
-          
           <img src="https://document-export.canva.com/N5djs/DAFRnyN5djs/3/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20221111%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221111T035638Z&X-Amz-Expires=21581&X-Amz-Signature=71109d85e21dbee6778a6888baac03eabe61e3e97dc1c40ea77a1eeead530601&X-Amz-SignedHeaders=host&response-expires=Fri%2C%2011%20Nov%202022%2009%3A56%3A19%20GMT" alt="logo">
           <select>
               <option value="">All Department</option>
@@ -173,11 +167,11 @@
        <div class="three">
           <div class="sign">
           <img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" >
-          <p><a href="signup.html">Sign in</a></p>
+          <p>Sign in</p>
           </div>
           <div class="sign">
           <img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg">
-          <p><a href="order.html">Orders</a></p>
+          <p>Orders</p>
        </div>
        <div class="sign">
           <img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg">
@@ -189,65 +183,42 @@
    </div>
    <br>
    <br>
- <div id="container"></div>
+    <h1>Total cast</h1>
+    <div id="container"></div>
+
 </body>
 </html>
 <script>
-     let bag =[];
-     let cartItems = JSON.parse(localStorage.getItem("cartProducts"))||[]
-  
-    let url="https://fakestoreapi.com/products"
-    async function getData(){
-     try{
-        let res = await fetch(url)
-        let out = await res.json()
-        bag = out
-        console.log(out)
-        displayCard(out)
-       }
-      catch(err){
-        alert(err)
-       }
-    }
-    getData();
+    let cartItems =JSON.parse(localStorage.getItem("cartProducts"));
+    console.log(cartItems)
+    displayCard(cartItems)
+    let totalCost = cartItems.reduce((acc,el)=>acc + el.price,0);
+   console.log(totalCost)
+    document.querySelector("h1").innerText= totalCost
+    function displayCard(data){
+        document.querySelector("#container").innerHTML="";
+           data.forEach(function(element){
+              let div = document.createElement("div")
 
-    function search(){
-      let q =  document.querySelector("input").value;
-      let newData = bag.filter(function(element){
-        return element.title.toLowerCase().includes(q.toLowerCase()) ;
-      })
-      displayCard(newData)
-    }
- function displayCard(out){
-    document.querySelector("#container").innerHTML=" ";
-    out.forEach((element)=>{
-    let div = document.createElement("div")
-    let image =document.createElement("img");
-    image.setAttribute("src",element.image)
+              let image =document.createElement("img");
+              image.setAttribute("src",element.avatar)
 
-    let title = document.createElement("h2");
-    title.innerText=element.title
+              let title = document.createElement("h2");
+              title.innerText=element.title
 
-    let category= document.createElement("p");
-    category.innerText=element.category
+              let category= document.createElement("p");
+              category.innerText=element.category
 
-    let des=document.createElement("p");
-    des.innerText =element.description
+              let des=document.createElement("p");
+              des.innerText =element.description
 
-     let price =document.createElement("h2");
-     price.innerText=element.price
+              let price =document.createElement("h2");
+               price.innerText=element.price
+             
+               div.append(image,title,category,des,price)
+              document.querySelector("#container").append(div)
 
-     let btn=document.createElement("button")
-     btn.innerText="Add to cart"
-     btn.addEventListener("click",function(){
-        cartItems.push(element)
-     localStorage.setItem("cartProducts",JSON.stringify(cartItems))
-     })
+           })
 
-     div.append(image,title,category,des,price,btn)
-     document.querySelector("#container").append(div);
-  })
 }
-
-
 </script>

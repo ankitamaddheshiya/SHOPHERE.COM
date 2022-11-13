@@ -46,7 +46,6 @@
     border-radius:35px 0px 0px 35px;
    font-size: 15px;
     text-align: center;
-
 }
 .logo>input{
     width:30%;
@@ -65,8 +64,6 @@
     border-radius:0px 35px 35px 0px;
     font-style: italic;
     text-align: center;
-  
-
 }
 .one{
     width: 15%;
@@ -105,7 +102,6 @@
     width:100%;
     background-color: #fff;
     padding: 5px 200px;
-    
 }
 .container .title{
     font-size: 16px;
@@ -119,15 +115,11 @@
     bottom:0;
     height: 3px;
     width:30px;
-
 }
-
-
 form .user-details .input-box{
     margin:20px 0 12px 0;
     width:calc(100%/2 - 20px);
 }
-
 .user-details .input-box input{
     height:45px;
     width:100%;
@@ -137,7 +129,7 @@ form .user-details .input-box{
     font-size: 16px;
     font-style: italic;
 } 
-#btn{
+#submit{
     width:40%;
     height:50px;
     background-color: black;
@@ -174,10 +166,8 @@ form .user-details .input-box{
 </head>
 <body>
     <div id="nav_bar">
-        
         <div id="nav_up">
            <div class="logo">
-               
                <img src="https://document-export.canva.com/N5djs/DAFRnyN5djs/3/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20221111%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221111T035638Z&X-Amz-Expires=21581&X-Amz-Signature=71109d85e21dbee6778a6888baac03eabe61e3e97dc1c40ea77a1eeead530601&X-Amz-SignedHeaders=host&response-expires=Fri%2C%2011%20Nov%202022%2009%3A56%3A19%20GMT" alt="logo">
                <select>
                    <option value="">All Department</option>
@@ -190,7 +180,6 @@ form .user-details .input-box{
                    <option value="Cameras">Cameras</option>
                    <option value="Clothes">Clothes</option>
                </select>
-               
                <input type="text" placeholder="Search: SHOPHERE.COM">
                <div>
                <img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg">
@@ -198,7 +187,6 @@ form .user-details .input-box{
            </div>
            <div class="nav_img">
                <img src="https://img.shop.com/Image/header2013/layered-us-eng-105972-blk-friday-bannerheader1668091493562.jpg" alt="">
-     
            </div>
         </div>
      
@@ -209,14 +197,13 @@ form .user-details .input-box{
             </div>
             <div class="two">
            <ul class="flex">
-              <li>Exclusive Brand</li>
-              <li>Stores</li>
-             <li>Deals</li>
-             <li>SHOP Travels</li>
-             <li>Departments</li>
-             <li>Shop Buddy</li>
-             <li>SHOP Local</li>
-             <li></li>
+            <li><a href="product.html">Exclusive Brand</a></li>
+            <li><a href="product.html">Store</a></li>
+           <li><a href="product.html">Deals</a></li>
+           <li><a href="fasion.html">SHOP Travels</a></li>
+           <li><a href="fasion.html">Departments</a></li>
+           <li><a href="product.html">Shop Buddy</a></li>
+           <li><a href="fasion.html">SHOP Local</a></li>
                </ul>
             </div>
             <div class="three">
@@ -226,38 +213,39 @@ form .user-details .input-box{
                </div>
                <div class="sign">
                <img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg">
-               <p>Orders</p>
+               <p><a href="order.html">Orders</a></p>
             </div>
             <div class="sign">
                <img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg">
-               <p>Cart</p>
+               <p><a href="cart1.html">cart</a></p>
             </div> 
             </div>
           </div>
         </div>
         </div>
      <br>
-     
      <div class="container">
          <div class="title"><h1>Sign in</h1>
            </div>
-        
-         <form action="#">
+    <form  method="post" onsubmit="signIn(event);" autocomplete="off" >
              <div class="user-details">
              <div class="input-box">
                      <span class="details">Email Address</span>
-                     <input type="Email" placeholder="ankgyan@gmail.com" required>
+                     <input id="email" type="Email" placeholder="ankgyan@gmail.com" required>
                  </div>
                  <div class="input-box">
                      <span class="details">Password</span>
-                     <input type="password" placeholder="Please enter your password" required>
+                     <input id="pass" type="password" placeholder="Please enter your password" required>
                  </div>
                 </div>
-              <a href="">Forget your possword</a>
+                <a href="">Forget your possword</a>
+                <br>
+                <br>
+                <input id="submit" type="submit" value="Login Successfully">
+                
             </form>
             <br>
-       <button id="btn">Sign In</button>
-     </div>
+</div>
      <br>
      <br>
      <br>
@@ -286,8 +274,22 @@ form .user-details .input-box{
          <img src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png" alt="">
        </div>
        <img src="https://seal.digicert.com/seals/cascade/?tag=mcRGO2B9&referer=www.shop.com&format=png&lang=en&seal_number=3&seal_size=m&an=min" alt="">
-    </body>
+</body>
 </html>
 <script>
-   
+const signIn = e => {
+    e.preventDefault();
+    let email  = document.querySelector("#email");
+    let password = document.querySelector("#pass");
+    let formData = JSON.parse(localStorage.getItem('formData'));
+    let exist = formData &&
+    JSON.parse(localStorage.getItem("formData")).some(data=> data.email==email && data.pass== pass)
+    if(!exist){
+        alert("Incorrect login  credentials")
+        window.location.href="Home.html"
+    }else{
+        alert("Login successful")
+        location.href ="/";
+    }
+}
 </script>
